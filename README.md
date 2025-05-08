@@ -110,7 +110,7 @@ M_{01}M_{12} - M_{11}M_{02} & M_{02}M_{10} - M_{12}M_{00} & M_{00}M_{11}-M_{10}M
 $$
 
 
-$M'$ is the adjugate matrix(notated $adj(M)$ of M. The adjugate matrix is defined like so,
+$M'$ is the adjugate matrix(notated $adj(M)$ ) of M. The adjugate matrix is defined like so,
 
 $$
 (adj(M))^TM=det(M)I
@@ -173,14 +173,14 @@ Thus, $M' = adj(M)$
 $$
 Xn = (t\times b) adj(M)
 $$
-Solving for X, we see that X is equal to the transpose of $M'$.
+Solving for X, we see that X is equal to the transpose of $adj(M)$.
 $$
 Xn = (adj(M))^Tn
 $$
 $$
 X=(adj(M))^T
 $$
-The transpose of the adjugate matrix is the cofactor matrix(notated $cof(M)$). Transposing $M'$ therefore gives us the cofactor matrix which is what X equals.
+The transpose of the adjugate matrix is the cofactor matrix(notated $cof(M)$ ). Transposing $M'$ therefore gives us the cofactor matrix which is what X equals.
 $$
 X= cof(M) = adj(M)^T 
 $$
