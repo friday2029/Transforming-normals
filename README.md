@@ -97,9 +97,7 @@ We can see the elements of $t \times b$ on the left and a 3x3 matrix $M'$ on the
 
 $$
 M' = 
-\begin{bmatrix}
-M_{[1]}\times M_{[2]} & M_{[2]}\times M_{[0]} & M_{[0]}\times M_{[1]}
-\end{bmatrix} 
+M_{[1]}\times M_{[2]} + M_{[2]}\times M_{[0]} + M_{[0]}\times M_{[1]}
 $$
 
 $$
