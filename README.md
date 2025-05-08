@@ -109,6 +109,8 @@ M_{01}M_{12} - M_{11}M_{02} & M_{02}M_{10} - M_{12}M_{00} & M_{00}M_{11}-M_{10}M
 \end{bmatrix} 
 $$
 
+//TODO Prove $M'$ is the adjugate matrix, the below should not be true(?)
+
 $$
 M' = 
 \begin{bmatrix}
