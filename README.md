@@ -180,7 +180,7 @@ $$
 $$
 X=(adj(M))^T
 $$
-The transpose of the adjugate matrix is the cofactor matrix(notated $cof(M)$ ). Transposing $M'$ therefore gives us the cofactor matrix which is what X equals.
+The transpose of the adjugate matrix is the cofactor matrix(notated $cof(M)$ ).
 $$
 X= cof(M) = adj(M)^T 
 $$
