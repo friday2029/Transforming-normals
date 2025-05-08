@@ -158,10 +158,6 @@ $$
 This explains why simply using the transpose of the inverse of M was not sufficient since the $det(M)$ contribution is missing. For $det(M) < 0$ the sign would be flipped.  
 
 
-==//TODO Why does Eric chose this order(12, 20, 01)? Perhaps thinking about how the adjugate  which he is claiming this equals will answer this==
-==//TODO Work out how M' equals to the cofactor matrix Dale Weiler is talking about==
-
-
 ----
 #### RESOURCES
 
