@@ -15,7 +15,7 @@ $$
 
 
 
-Let M\[n] be the nth column of the matrix M,
+Let M\[n] be the nth column of the 3x3 transformation matrix M,
 
 $$
 Xn = (t_xM_{[0]}+t_yM_{[1]}+t_zM_{[2]})\times (b_xM_{[0]}+b_yM_{[1]}+b_zM_{[2]})
