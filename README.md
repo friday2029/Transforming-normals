@@ -1,5 +1,5 @@
 # Transforming normals
-Under Development, might contain misinformation
+!Under Development, might contain misinformation!
 
 A better condition to derive the matrix X required to maintain the properties of a normal is to use the cross product.
 
