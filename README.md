@@ -109,39 +109,81 @@ M_{01}M_{12} - M_{11}M_{02} & M_{02}M_{10} - M_{12}M_{00} & M_{00}M_{11}-M_{10}M
 \end{bmatrix} 
 $$
 
-//TODO Prove $M'$ is the adjugate matrix, the below should not be true(?)
+
+$M'$ is the adjugate matrix(notated $adj(M)$ of M. The adjugate matrix is defined like so,
 
 $$
-M' = 
+(adj(M))^TM=det(M)I
+$$
+
+To prove that $M'$ is the adjugate matrix, we have to show that
+
+$$
+(M_{[i]}\times M_{[j]})\cdot M_{[k]} = det(M) , \ for\ any\ \{i,j,k\} \ that's \ an \ even \ permutation \ of \{0,1,2\} 
+$$
+Or,
+$$
+(M')^TM = det(M)I
+$$
+
+$$
+\begin{align}
+&\begin{bmatrix}
+M_{00} & M_{01} & M_{02}\\
+M_{10} & M_{11} & M_{12}\\
+M_{20} & M_{21} & M_{22}\\
+\end{bmatrix} \\
 \begin{bmatrix}
-C_{00} & C_{01} & C_{02}\\
-C_{10} & C_{11} & C_{12}\\
-C_{20} & C_{21} & C_{22}\\
-\end{bmatrix} 
+M_{11}M_{22} - M_{21}M_{12} & M_{21}M_{02} - M_{01}M_{22} & M_{01}M_{12} - M_{11}M_{02}\\
+M_{12}M_{20} - M_{22}M_{10} & M_{22}M_{00} - M_{02}M_{20} & M_{02}M_{10} - M_{12}M_{00}\\
+M_{10}M_{21}-M_{20}M_{11} & M_{20}M_{01}-M_{00}M_{21} & M_{00}M_{11}-M_{10}M_{01}\\
+\end{bmatrix}
+&\begin{bmatrix}
+det(M) & 0 & 0\\
+0 & det(M) & 0\\
+0 & 0 & det(M)\\
+\end{bmatrix}
+\end{align}
 $$
 
 $$
-Xn = (t\times b) M'
+(M_{[1]}\times M_{[2]})\cdot M_{[0]}
+$$
+$$
+=M_{00}(M_{11}M_{22} - M_{21}M_{12}) + M_{10}(M_{21}M_{02} - M_{01}M_{22}) + M_{20}(M_{01}M_{12} - M_{11}M_{02}) = det(M)
 $$
 
+$$
+(M_{[2]}\times M_{[0]})\cdot M_{[1]}
+$$
+$$
+=M_{01}(M_{12}M_{20} - M_{22}M_{10}) + M_{11}(M_{22}M_{00} - M_{02}M_{20}) + M_{21}(M_{02}M_{10} - M_{12}M_{00})
+$$
+$$
+=M_{01}M_{12}M_{20} - M_{01}M_{22}M_{10} + M_{11}M_{22}M_{00} - M_{11}M_{02}M_{20} + M_{21}M_{02}M_{10} - M_{21}M_{12}M_{00}
+$$
+$$
+=M_{00}(M_{11}M_{22} - M_{21}M_{12}) + M_{10}(M_{21}M_{02} - M_{01}M_{22}) + M_{20}(M_{01}M_{12} - M_{11}M_{02}) = det(M)
+$$
+
+and so on...
+
+Thus, $M' = adj(M)$ 
+
+$$
+Xn = (t\times b) adj(M)
+$$
 Solving for X, we see that X is equal to the transpose of $M'$.
-
 $$
-Xn = (M')^Tn
+Xn = (adj(M))^Tn
 $$
-
 $$
-X=(M')^T
+X=(adj(M))^T
 $$
-
-~~$M'$ is known as the cofactor matrix(notated cof(M)) and the transpose of the cofactor matrix $(M')^T$ is known as the adjugate matrix(notated $adj(M)$)~~
-
-$M'$ is known as the adjugate matrix(notated adj(M)), which is defined as the transpose of the cofactor matrix(notated cof(M)). Transposing $M'$ therefore gives us back the cofactor matrix which is what X equals.
-
+The transpose of the adjugate matrix is the cofactor matrix(notated $cof(M)$). Transposing $M'$ therefore gives us the cofactor matrix which is what X equals.
 $$
-X= cof(M) = adj(M)^T = (cof(M)^T)^T
+X= cof(M) = adj(M)^T 
 $$
-
 
 #### Examining the difference between using the transpose of the inverse and the adjugate transpose.
 
