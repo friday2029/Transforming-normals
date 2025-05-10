@@ -1,4 +1,4 @@
-# Transforming normals
+# Notes On Transforming Normals
 
 A better condition to derive the matrix X required to maintain the properties of a normal is to use the cross product.
 
@@ -202,7 +202,7 @@ This explains why simply using the transpose of the inverse of M was not suffici
 
 
 ----
-#### RESOURCES
+#### RESOURCES READ
 
 Eric Lengyel
 https://terathon.com/blog/transforming-normals.html
