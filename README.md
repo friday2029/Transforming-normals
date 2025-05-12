@@ -125,7 +125,7 @@ $$
 (cof(M))^TM=det(M)I
 $$
 
-We can us this to prove that $(M')^T$ is the adjugate matrix and thus $M'$ is the cofactor matrix of M.
+We can use this to prove that $(M')^T$ is the adjugate matrix and thus $M'$ is the cofactor matrix of M.
 
 The following have to be true,
 
