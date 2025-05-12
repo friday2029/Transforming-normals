@@ -111,7 +111,7 @@ $$
 
 $M'$ is the cofactor matrix of M(notated $cof(M)$ ). The adjugate matrix of M(notated $adj(M)$ ) is defined to be the transpose of the cofactor.
 
-From this definition of the matrix inverse we can see that the following have to be true for a $cof(M)^T$ or $adj(M)$ matrix. 
+From the following definition of the matrix inverse we can see that the following have to be true for a $cof(M)^T$ or $adj(M)$ matrix. 
 
 $$
 M^{-1}=\frac{adj(M)}{det(M)}
