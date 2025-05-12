@@ -109,13 +109,25 @@ M_{01}M_{12} - M_{11}M_{02} & M_{02}M_{10} - M_{12}M_{00} & M_{00}M_{11}-M_{10}M
 $$
 
 
-$M'$ is the adjugate matrix(notated $adj(M)$ ) of M. The adjugate matrix is defined like so,
+$M'$ is the cofactor matrix of M(notated $cof(M)$). The adjugate matrix of M(notated $adj(M)$) is defined to be the transpose of the cofactor.
+
+From this definition of the matrix inverse we can see that the following have to be true for a $cof(M)^T$ or $adj(M)$ matrix. 
 
 $$
-(adj(M))^TM=det(M)I
+M^{-1}=\frac{adj(M)}{det(M)}
 $$
 
-To prove that $M'$ is the adjugate matrix, we have to show that
+$$
+M^{-1}M=I
+$$
+
+$$
+(cof(M))^TM=det(M)I
+$$
+
+We can us this to prove that $(M')^T$ is the adjugate matrix and thus $M'$ is the cofactor matrix of M.
+
+The following have to be true,
 
 $$
 (M_{[i]}\times M_{[j]})\cdot M_{[k]} = det(M) , \ for\ any\ \{i,j,k\} \ that's \ an \ even \ permutation \ of \{0,1,2\} 
@@ -167,19 +179,16 @@ $$
 
 and so on...
 
-Thus, $M' = adj(M)$ 
+Thus, $(M')^T = adj(M)$ and $M' = cof(M)$. 
 
 $$
-Xn = (t\times b) adj(M)
+Xn = (t\times b) cof(M)
 $$
 Solving for X, we see that X is equal to the transpose of $adj(M)$.
 $$
-Xn = (adj(M))^Tn
+Xn = cof(M)n
 $$
-$$
-X=(adj(M))^T
-$$
-The transpose of the adjugate matrix is the cofactor matrix(notated $cof(M)$ ).
+
 $$
 X= cof(M) = adj(M)^T 
 $$
