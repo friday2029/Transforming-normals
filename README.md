@@ -109,7 +109,7 @@ M_{01}M_{12} - M_{11}M_{02} & M_{02}M_{10} - M_{12}M_{00} & M_{00}M_{11}-M_{10}M
 $$
 
 
-$M'$ is the cofactor matrix of M(notated $cof(M)$). The adjugate matrix of M(notated $adj(M)$) is defined to be the transpose of the cofactor.
+$M'$ is the cofactor matrix of M(notated $cof(M)$ ). The adjugate matrix of M(notated $adj(M)$ ) is defined to be the transpose of the cofactor.
 
 From this definition of the matrix inverse we can see that the following have to be true for a $cof(M)^T$ or $adj(M)$ matrix. 
 
