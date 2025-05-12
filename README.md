@@ -184,7 +184,7 @@ Thus, $(M')^T = adj(M)$ and $M' = cof(M)$.
 $$
 Xn = (t\times b) cof(M)
 $$
-Solving for X, we see that X is equal to the transpose of $adj(M)$.
+Solving for X, we find that it is equal to the cofactor of M or the transpose of the adjugate of M.
 $$
 Xn = cof(M)n
 $$
